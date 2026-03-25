@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymer Explorer | Learning Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* Scorecard specific styling */
+        .scorecard-item {
+            background: #f9f9f9;
+            border-left: 5px solid #ccc;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .scorecard-item.correct {
+            border-left-color: #2ecc71;
+        }
+
+        .scorecard-item.incorrect {
+            border-left-color: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Polymer Explorer</h1>
+        <nav>
+            <button onclick="showSection('search')">Search</button>
+            <button onclick="showSection('compare')">Compare</button>
+            <button onclick="showSection('map')">Property Map</button>
+            <button onclick="showSection('viz')">3D Viz</button>
+            <button onclick="showSection('quiz')">Take Exam</button>
+            <button onclick="showSection('resources')">Resources</button>
+            <button onclick="showSection('about')">About</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search" class="active">
+            <h2>Search & Filter Polymers</h2>
+            <input type="text" id="searchInput" list="polymerSuggestions"
+                placeholder="Search by name or application (e.g., Polyethylene, Tires)...">
+            <datalist id="polymerSuggestions"></datalist>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" onclick="filterPolymers('All', this)">All</button>
+                <button class="filter-btn" onclick="filterPolymers('Thermoplastic', this)">Thermoplastics</button>
+                <button class="filter-btn" onclick="filterPolymers('Thermoset', this)">Thermosets</button>
+                <button class="filter-btn" onclick="filterPolymers('Elastomer', this)">Elastomers</button>
+                <button class="filter-btn" onclick="filterPolymers('Biopolymer', this)">Biopolymers</button>
+                <button class="filter-btn" onclick="filterPolymers('Conductive Polymer', this)">Conductive</button>
+            </div>
+
+            <div id="searchResults" class="grid-container"></div>
+        </section>
+
+        <section id="compare">
+            <h2>Compare Properties</h2>
+            <div class="compare-controls">
+                <select id="poly1"></select>
+                <select id="poly2"></select>
+                <button onclick="comparePolymers()">Compare</button>
+            </div>
+            <div id="compareResults"></div>
+
+            <div style="text-align: center;">
+                <button id="exportBtn" onclick="exportComparisonCSV()"
+                    style="display: none; margin-top: 1.5rem; background-color: #27ae60;">
+                    📥 Export Comparison to Excel (CSV)
+                </button>
+            </div>
+
+            <canvas id="compareChart" style="margin-top: 2rem; max-height: 400px; display: none;"></canvas>
+        </section>
+
+        <section id="map">
+            <h2>Interactive Material Selection Map</h2>
+            <p style="color: #555; margin-bottom: 2rem;">Discover material trends! This scatter plot maps
+                <strong>Density (g/cm³)</strong> against <strong>Glass Transition Temperature (Tg)</strong>. Hover over
+                any dot to identify the polymer.
+            </p>
+
+            <div
+                style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                <canvas id="ashbyChart" style="max-height: 500px;"></canvas>
+            </div>
+        </section>
+
+        <section id="viz">
+            <h2>Interactive 3D Viewer</h2>
+            <div class="compare-controls">
+                <input type="text" id="vizSearchInput" list="vizSuggestions"
+                    placeholder="Search polymer to view in 3D (e.g., Polyethylene)...">
+                <datalist id="vizSuggestions"></datalist>
+                <button onclick="load3DModel()">Render 3D</button>
+            </div>
+
+            <div id="viz-error" style="color: #e74c3c; text-align: center; margin-bottom: 10px; font-weight: bold;">
+            </div>
+
+            <div id="container-01" class="mol-container"></div>
+            <p class="note">Scroll to zoom. Click and drag to rotate. Uses monomer representations from PubChem.</p>
+        </section>
+
+        <section id="quiz">
+            <h2>Structured Polymer Assessment</h2>
+            <p style="color: #555; margin-bottom: 2rem;">Take a 5-question exam to test your knowledge.</p>
+
+            <div id="quizSetup" class="compare-controls">
+                <select id="quizDifficulty">
+                    <option value="easy">Easy (Applications & Categories)</option>
+                    <option value="medium">Medium (Thermal Properties: Tg & Tm)</option>
+                    <option value="hard">Hard (Advanced: Density & Mechanical Limits)</option>
+                </select>
+                <button onclick="startStructuredQuiz()">Start 5-Question Exam</button>
+            </div>
+
+            <div id="quizContainer"
+                style="display: none; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee; margin-top: 1rem;">
+
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">
+                    <h3 id="questionNumberDisplay" style="margin: 0; color: #7f8c8d; font-size: 1rem;">Question 1 of 5
+                    </h3>
+                    <span id="quizLiveScore" style="font-weight: bold; color: var(--primary);">Score: 0</span>
+                </div>
+
+                <h3 id="questionText" style="margin-top: 0; color: var(--primary);"></h3>
+                <div id="optionsContainer" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                </div>
+
+                <p id="quizFeedback" style="margin-top: 20px; font-size: 1.1rem; font-weight: bold;"></p>
+
+                <div style="text-align: center;">
+                    <button id="nextQuestionBtn" onclick="nextQuestion()"
+                        style="display: none; margin-top: 15px; background-color: var(--primary);">Next Question
+                        ➡️</button>
+                    <button id="finishQuizBtn" onclick="showScorecard()"
+                        style="display: none; margin-top: 15px; background-color: #f39c12;">Finish Exam & See Results
+                        🏆</button>
+                </div>
+            </div>
+
+            <div id="scorecardContainer"
+                style="display: none; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee; margin-top: 1rem;">
+                <h2 style="text-align: center; color: var(--primary);">Exam Complete!</h2>
+                <h1 id="finalScoreDisplay" style="text-align: center; font-size: 3rem; margin: 10px 0; color: #27ae60;">
+                </h1>
+                <p style="text-align: center; color: #555; margin-bottom: 20px;">Review your answers below.</p>
+
+                <div id="scorecardResults" style="display: flex; flex-direction: column; gap: 15px;">
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button
+                        onclick="document.getElementById('quizSetup').style.display='flex'; document.getElementById('scorecardContainer').style.display='none';">Try
+                        Another Exam</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Learning Resources & Inspiration</h2>
+            <h3 style="margin-top: 2rem; color: var(--primary);">🕰️ The History of Polymers</h3>
+            <div class="grid-container" style="margin-bottom: 2rem;">
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/1RDc2opwg0I" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="display: block; border-bottom: 4px solid var(--secondary);"></iframe>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--primary);">The Plastic Problem
+                            (PBS)</h4>
+                        <p style="font-size: 0.9rem; color: #555; margin: 0;"><strong>Why watch this?</strong> A deep
+                            dive into the global plastic pollution crisis and the massive challenge of dealing with
+                            synthetic materials in the environment.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/9GMbRG9CZJw" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="display: block; border-bottom: 4px solid var(--secondary);"></iframe>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--primary);">A Brief History of
+                            Plastic</h4>
+                        <p style="font-size: 0.9rem; color: #555; margin: 0;"><strong>Why watch this?</strong> A
+                            beautifully animated, fast-paced history lesson tracing the exact timeline of how we went
+                            from natural rubbers to inventing modern plastics.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/iO3SA4YyEYU" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="display: block; border-bottom: 4px solid var(--secondary);"></iframe>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--primary);">The Story of Plastic
+                        </h4>
+                        <p style="font-size: 0.9rem; color: #555; margin: 0;"><strong>Why watch this?</strong> Essential
+                            viewing for modern materials engineers. It visualizes the lifecycle of plastics after they
+                            are used and the reality of degradation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem; color: var(--primary);">📚 Study Notes & Full Courses</h3>
+            <div class="grid-container">
+                <div class="card">
+                    <h3 style="margin-top: 0;">Complete University Courses</h3>
+                    <ul>
+                        <li><a href="https://youtube.com/playlist?list=PLbMVogVj5nJSztC8B3fU7J7eA5sE3x6-F"
+                                target="_blank">📚 NPTEL: Complete Polymer Chemistry Playlist</a></li>
+                        <li><a href="https://ocw.mit.edu/courses/3-063-polymer-physics-spring-2007/" target="_blank">🏛️
+                                MIT OCW: Polymer Physics Course</a></li>
+                        <li><a href="https://ocw.mit.edu/courses/10-569-synthesis-of-polymers-fall-2006/"
+                                target="_blank">🧪 MIT OCW: Synthesis of Polymers</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 style="margin-top: 0;">Study Notes & Telegram Channels</h3>
+                    <ul>
+                        <li><a href="https://t.me/s/gtu_study" target="_blank">📱 Telegram: Material Science & Eng.
+                                Notes</a></li>
+                        <li><a href="https://t.me/jchemistry" target="_blank">📱 Telegram: Chemistry & Polymer Notes</a>
+                        </li>
+                        <li><a href="https://iupac.org/polymer-edu/" target="_blank">📖 Official IUPAC Polymer
+                                Terminology Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About the Developer</h2>
+            <div class="card about-card">
+                <h3>Name : Susheel Prajapati</h3>
+                <p><strong>Degree:</strong> B.Tech IT and Mathematical Innovation</p>
+                <p><strong>University:</strong> University of Delhi</p>
+                <p><strong>Mentor:</strong> Prof. Mahima Kaushik</p>
+                <p>This project was built to help materials science students easily search, compare, and visualize
+                    polymer structures using real scientific data.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

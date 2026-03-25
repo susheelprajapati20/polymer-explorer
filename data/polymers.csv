@@ -1,0 +1,120 @@
+polymer_name,type,density,glass_transition_temperature,melting_point,smiles,applications,wiki_link,pubchem_cid,tensile_strength,elongation
+Polyethylene (PE),Thermoplastic,0.94 g/cm³,-100 °C,115-135 °C,CC,Packaging; Bottles; Plastic Bags,https://en.wikipedia.org/wiki/Polyethylene,6324,N/A,N/A
+Polyvinyl Chloride (PVC),Thermoplastic,1.38 g/cm³,82 °C,100-260 °C,C(C(Cl))C,Pipes; Window Frames; Cables,https://en.wikipedia.org/wiki/Polyvinyl_chloride,6325,N/A,N/A
+Polystyrene (PS),Thermoplastic,1.05 g/cm³,100 °C,240 °C,C(C(c1ccccc1))C,Cutlery; CD Cases; Insulation,https://en.wikipedia.org/wiki/Polystyrene,7150,N/A,N/A
+Polyethylene Terephthalate (PET),Thermoplastic,1.38 g/cm³,67-81 °C,260 °C,O=C(c1ccc(C(=O)OCCO)cc1)OCCO,Beverage Bottles; Clothing Fibers,https://en.wikipedia.org/wiki/Polyethylene_terephthalate,354399,N/A,N/A
+Polytetrafluoroethylene (PTFE),Thermoplastic,2.20 g/cm³,115 °C,327 °C,C(F)(F)C(F)(F),Non-stick Coatings; Gaskets; Bearings,https://en.wikipedia.org/wiki/Polytetrafluoroethylene,9554,N/A,N/A
+Nylon 6-6 (Polyamide),Thermoplastic,1.14 g/cm³,50 °C,265 °C,NCCCCCCNC(=O)CCCCC(=O),Textiles; Carpets; Gears,https://en.wikipedia.org/wiki/Nylon_66,6052,N/A,N/A
+Polypropylene (PP),Thermoplastic,0.90 g/cm³,-10 °C,160 °C,CC(C)C,Hinges; Automotive Parts; Textiles,https://en.wikipedia.org/wiki/Polypropylene,8028,N/A,N/A
+Polycarbonate (PC),Thermoplastic,1.20 g/cm³,147 °C,225 °C,CC(C)(c1ccc(O)cc1)c2ccc(O)cc2,Bulletproof Glass; Eyewear; Electronics,https://en.wikipedia.org/wiki/Polycarbonate,3324,N/A,N/A
+Poly(methyl methacrylate) (PMMA),Thermoplastic,1.18 g/cm³,105 °C,160 °C,CC(=C)C(=O)OC,Acrylic Glass; Lenses; Signs,https://en.wikipedia.org/wiki/Poly(methyl_methacrylate),6658,N/A,N/A
+Polyurethane (PU),Thermoset,1.20 g/cm³,-50 °C,Decomposes,O=C=Nc1ccc(cc1)Cc2ccc(N=C=O)cc2,Foams; Spandex; Insulation,https://en.wikipedia.org/wiki/Polyurethane,31235,N/A,N/A
+Polydimethylsiloxane (PDMS),Elastomer,0.97 g/cm³,-125 °C,-40 °C,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,Microfluidics; Sealants; Lubricants,https://en.wikipedia.org/wiki/Polydimethylsiloxane,24705,N/A,N/A
+Polylactic Acid (PLA),Biopolymer,1.24 g/cm³,60 °C,150-160 °C,CC(C(=O)OC(C)C(=O)O)O,3D Printing; Biodegradable Cups,https://en.wikipedia.org/wiki/Polylactic_acid,61503,N/A,N/A
+Acrylonitrile Butadiene Styrene (ABS),Thermoplastic,1.06 g/cm³,105 °C,Amorphous,C=CC#N.C=CC=C.C=Cc1ccccc1,LEGO Bricks; 3D Printing; Housings,https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene,6569,N/A,N/A
+Epoxy Resin (DGEBA),Thermoset,1.16 g/cm³,70-150 °C,Decomposes,CC(C)(c1ccc(OCC2CO2)cc1)c2ccc(OCC3CO3)cc2,Adhesives; Coatings; Composites,https://en.wikipedia.org/wiki/Epoxy,2284,N/A,N/A
+Kevlar (Polyaramid),Thermoplastic,1.44 g/cm³,340 °C,Decomposes,O=C(c1ccc(C(=O)Nc2ccc(NC(=O))cc2)cc1)N,Bulletproof Vests; High-strength Ropes,https://en.wikipedia.org/wiki/Kevlar,74900,N/A,N/A
+Cellulose,Biopolymer,1.50 g/cm³,Amorphous,Decomposes,OCC1OC(OC2C(O)C(O)C(O)OC2CO)C(O)C(O)C1O,Paper; Cotton; Rayon Fibers,https://en.wikipedia.org/wiki/Cellulose,439178,N/A,N/A
+Polyisoprene (Natural Rubber),Elastomer,0.92 g/cm³,-70 °C,24 °C,CC(=C)C=C,Tires; Footwear; Rubber Bands,https://en.wikipedia.org/wiki/Natural_rubber,6559,N/A,N/A
+Polychloroprene (Neoprene),Elastomer,1.23 g/cm³,-40 °C,45 °C,C=CC(Cl)=C,Wetsuits; Electrical Insulation,https://en.wikipedia.org/wiki/Neoprene,31369,N/A,N/A
+Polyethylene Glycol (PEG),Thermoplastic,1.13 g/cm³,-65 °C,65 °C,C(CO)O,Medical Delivery; Laxatives; Creams,https://en.wikipedia.org/wiki/Polyethylene_glycol,174,N/A,N/A
+Polyvinyl Alcohol (PVA),Thermoplastic,1.19 g/cm³,85 °C,200 °C,C(C(O))C,Water-Soluble Films; Slime; Adhesives,https://en.wikipedia.org/wiki/Polyvinyl_alcohol,11199,N/A,N/A
+Polyoxymethylene (POM/Acetal),Thermoplastic,1.41 g/cm³,-75 °C,175 °C,C=O,Gears; Zippers; Fasteners,https://en.wikipedia.org/wiki/Polyoxymethylene,712,N/A,N/A
+Polyether Ether Ketone (PEEK_Classic),Thermoplastic,1.32 g/cm³,143 °C,343 °C,c1ccc(cc1)Oc2ccc(cc2)C(=O)c3ccc(cc3)Oc4ccccc4,Aerospace Parts; Medical Implants,https://en.wikipedia.org/wiki/Polyether_ether_ketone,62425,N/A,N/A
+Polyvinylidene Fluoride (PVDF),Thermoplastic,1.78 g/cm³,-35 °C,171 °C,C(C(F)(F))C,Piping; Lithium-ion Battery Binders,https://en.wikipedia.org/wiki/Polyvinylidene_fluoride,11646,N/A,N/A
+Polyacrylonitrile (PAN),Thermoplastic,1.18 g/cm³,95 °C,319 °C,C(C(C#N))C,Carbon Fiber Precursor; Textiles,https://en.wikipedia.org/wiki/Polyacrylonitrile,7848,N/A,N/A
+Polybutylene Terephthalate (PBT),Thermoplastic,1.31 g/cm³,60 °C,223 °C,O=C(c1ccc(C(=O)OCCCCO)cc1)OCCCCO,Electrical Connectors; Keycaps,https://en.wikipedia.org/wiki/Polybutylene_terephthalate,354400,N/A,N/A
+Styrene-Butadiene Rubber (SBR),Elastomer,0.94 g/cm³,-50 °C,Amorphous,C=CC=C.C=Cc1ccccc1,Car Tires; Shoe Soles,https://en.wikipedia.org/wiki/Styrene-butadiene,8073,N/A,N/A
+Nitrile Rubber (NBR),Elastomer,1.00 g/cm³,-40 °C,Amorphous,C=CC#N.C=CC=C,Lab Gloves; O-rings; Hoses,https://en.wikipedia.org/wiki/Nitrile_rubber,6569,N/A,N/A
+Phenol Formaldehyde (Bakelite),Thermoset,1.25 g/cm³,150 °C,Decomposes,c1cc(O)ccc1.C=O,Circuit Boards; Billiard Balls,https://en.wikipedia.org/wiki/Bakelite,996,N/A,N/A
+Chitosan,Biopolymer,0.20 g/cm³,Amorphous,Decomposes,C1C(C(C(OC1O)CO)O)N,Wound Dressings; Water Filtration,https://en.wikipedia.org/wiki/Chitosan,439213,N/A,N/A
+Polyvinyl Acetate (PVAc),Thermoplastic,1.19 g/cm³,30 °C,Amorphous,CC(=O)OC(C)C,Wood Glue; Bookbinding; Paint,https://en.wikipedia.org/wiki/Polyvinyl_acetate,7704,N/A,N/A
+Ethylene Vinyl Acetate (EVA),Elastomer,0.94 g/cm³,-20 °C,75 °C,CC.CC(=O)OC(C)C,Foam Mats; Hot Melt Adhesives,https://en.wikipedia.org/wiki/Ethylene-vinyl_acetate,7704,N/A,N/A
+Polyphenylene Sulfide (PPS),Thermoplastic,1.35 g/cm³,85 °C,285 °C,c1ccc(cc1)S,Filter Fabrics; Auto Parts,https://en.wikipedia.org/wiki/Polyphenylene_sulfide,14872,N/A,N/A
+Polyetherimide (PEI / Ultem),Thermoplastic,1.27 g/cm³,217 °C,Amorphous,O=C1c2cccc3c2c(ccc3)C(=O)N1,Aircraft Interiors; Guitar Picks,https://en.wikipedia.org/wiki/Polyetherimide,11641,N/A,N/A
+Polycaprolactone (PCL),Biopolymer,1.14 g/cm³,-60 °C,60 °C,O=C(O)CCCCC,Sutures; Tissue Engineering,https://en.wikipedia.org/wiki/Polycaprolactone,10401,N/A,N/A
+Polyglycolic Acid (PGA),Biopolymer,1.53 g/cm³,35 °C,225 °C,O=C(O)CO,Absorbable Medical Sutures,https://en.wikipedia.org/wiki/Polyglycolide,7570,N/A,N/A
+Alginic Acid (Alginate),Biopolymer,1.60 g/cm³,Amorphous,Decomposes,O=C(O)C1OC(OC2C(O)C(O)C(O)OC2C(=O)O)C(O)C(O)C1O,Food Thickener; Dental Impressions,https://en.wikipedia.org/wiki/Alginic_acid,91666324,N/A,N/A
+Silicone Rubber (VMQ),Elastomer,1.15 g/cm³,-120 °C,-40 °C,C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,Bakeware; Medical Tubing; Keypads,https://en.wikipedia.org/wiki/Silicone_rubber,24705,N/A,N/A
+Melamine Formaldehyde,Thermoset,1.50 g/cm³,Amorphous,Decomposes,Nc1nc(N)nc(N)n1.C=O,Dry Erase Boards; Countertops,https://en.wikipedia.org/wiki/Melamine_resin,7955,N/A,N/A
+Urea Formaldehyde,Thermoset,1.50 g/cm³,Amorphous,Decomposes,NC(=O)N.C=O,MDF Adhesives; Electrical Casings,https://en.wikipedia.org/wiki/Urea-formaldehyde,1154,N/A,N/A
+Polybenzimidazole (PBI),Thermoplastic,1.30 g/cm³,427 °C,Decomposes,c1ccc2c(c1)nc([nH]2)c3ccccc3,Astronaut Spacesuits; Firefighter Gear,https://en.wikipedia.org/wiki/Polybenzimidazole_fiber,65036,N/A,N/A
+Hyaluronic Acid,Biopolymer,1.80 g/cm³,Amorphous,Decomposes,CC(=O)NC1C(O)CC(OC2OC(C(=O)O)C(O)C(O)C2O)OC1CO,Skincare; Joint Lubricant,https://en.wikipedia.org/wiki/Hyaluronic_acid,24728,N/A,N/A
+Polyvinylpyrrolidone (PVP),Thermoplastic,1.20 g/cm³,160 °C,Amorphous,C1CC(=O)N(C1)C=C,Drug Delivery; Blood Plasma Expander; Binder,https://en.wikipedia.org/wiki/Polyvinylpyrrolidone,3755,40 MPa,10%
+Polyaniline (PANI),Conductive Polymer,1.32 g/cm³,105 °C,Amorphous,c1ccc(cc1)N,Biosensors; Supercapacitors; ML Hardware,https://en.wikipedia.org/wiki/Polyaniline,6049,50 MPa,5%
+Poly(3-hexylthiophene) (P3HT),Conductive Polymer,1.10 g/cm³,12 °C,238 °C,CCCCCC1=C(SC=C1),Organic Solar Cells; Flexible Electronics,https://en.wikipedia.org/wiki/Poly(3-hexylthiophene),16220111,20 MPa,15%
+Poly(lactic-co-glycolic acid) (PLGA),Biopolymer,1.34 g/cm³,45-55 °C,Amorphous,CC(C(=O)OCC(=O)O)O,Targeted Drug Delivery; Dissolvable Sutures,https://en.wikipedia.org/wiki/PLGA,23111554,45 MPa,5%
+Polyethyleneimine (PEI),Thermoplastic,1.05 g/cm³,-50 °C,73 °C,C(CN)N,Gene Therapy Delivery; CO2 Capture,https://en.wikipedia.org/wiki/Polyethylenimine,8058,N/A,N/A
+Polyamide-imide (PAI / Torlon),Thermoplastic,1.42 g/cm³,277 °C,Amorphous,O=C1c2ccc(cc2C(=O)N1)C(=O)Nc3ccc(cc3)Oc4ccccc4,Aerospace Engine Parts; F1 Racing Components,https://en.wikipedia.org/wiki/Polyamide-imide,111198,190 MPa,10%
+Polyethersulfone (PES),Thermoplastic,1.37 g/cm³,225 °C,Amorphous,c1ccc(cc1)Oc2ccc(cc2)S(=O)(=O)c3ccc(cc3)Oc4ccccc4,Kidney Dialysis Membranes; High-Temp PCB,https://en.wikipedia.org/wiki/Polyethersulfone,14675,85 MPa,40%
+Poly(vinylidene fluoride-co-hexafluoropropylene) (PVDF-HFP),Elastomer,1.78 g/cm³,-35 °C,140 °C,C(C(F)(F))C.C(C(F)(F)(F))(F)C(F)(F),Lithium-Ion Battery Binders; ML Sensors,https://en.wikipedia.org/wiki/Polyvinylidene_fluoride,11646,30 MPa,300%
+Polydopamine (PDA),Biopolymer,1.50 g/cm³,Amorphous,Decomposes,C1=CC(=C(C=C1CCN)O)O,Nanoparticle Coating; Tissue Engineering,https://en.wikipedia.org/wiki/Polydopamine,66068,N/A,N/A
+Poly(N-isopropylacrylamide) (PNIPAM),Smart Polymer,1.10 g/cm³,130 °C,Amorphous,CC(C)NC(=O)C(=C)C,Thermoresponsive Drug Release; Artificial Muscles,https://en.wikipedia.org/wiki/Poly(N-isopropylacrylamide),65036,N/A,N/A
+Poly(vinyl butyral) (PVB),Thermoplastic,1.07 g/cm³,70 °C,Amorphous,CCCC1OC(CC(O1)C)C,Shatterproof Car Windshields; Solar Encapsulation,https://en.wikipedia.org/wiki/Polyvinyl_butyral,7962,30 MPa,200%
+Poly(acrylic acid) (PAA),Thermoplastic,1.20 g/cm³,106 °C,Amorphous,C=CC(=O)O,Superabsorbent Diapers; Hydrogels,https://en.wikipedia.org/wiki/Polyacrylic_acid,6581,N/A,N/A
+Poly(styrene-b-butadiene-b-styrene) (SBS),Elastomer,0.94 g/cm³,-90 °C,Amorphous,C=CC=C.C=Cc1ccccc1,Shoe Soles; Asphalt Modification,https://en.wikipedia.org/wiki/Styrene-butadiene,8073,25 MPa,800%
+Polyhydroxyalkanoates (PHA),Biopolymer,1.25 g/cm³,5 °C,175 °C,CC(CC(=O)O)O,Marine Biodegradable Packaging; Medical Implants,https://en.wikipedia.org/wiki/Polyhydroxyalkanoates,11993489,40 MPa,5%
+Poly(vinyl chloride-co-vinyl acetate) (PVC-PVA),Thermoplastic,1.35 g/cm³,75 °C,Amorphous,C(C(Cl))C.CC(=O)OC(C)C,Vinyl Records; Magnetic Stripe Cards,https://en.wikipedia.org/wiki/Polyvinyl_chloride,6325,45 MPa,10%
+Poly(ether ether ketone) (PEEK_Adv),Thermoplastic,1.32 g/cm³,143 °C,343 °C,c1ccc(cc1)Oc2ccc(cc2)C(=O)c3ccc(cc3)Oc4ccccc4,Spinal Implants; Aerospace Components,https://en.wikipedia.org/wiki/Polyether_ether_ketone,62425,100 MPa,20%
+Poly(phenylene oxide) (PPO),Thermoplastic,1.06 g/cm³,210 °C,Amorphous,Cc1cc(C)c(O)cc1,Fluid Handling Components; Server Housings,https://en.wikipedia.org/wiki/Poly(p-phenylene_oxide),6654,60 MPa,30%
+Liquid Crystal Polymer (LCP),Thermoplastic,1.60 g/cm³,130 °C,330 °C,c1ccc(cc1)c2ccc(cc2),High-Frequency 5G Antennas; Micro-connectors,https://en.wikipedia.org/wiki/Liquid-crystal_polymer,111198,150 MPa,3%
+Poly(vinylidene chloride) (PVDC / Saran),Thermoplastic,1.60 g/cm³,-17 °C,200 °C,C=C(Cl)Cl,High-Barrier Food Packaging,https://en.wikipedia.org/wiki/Polyvinylidene_chloride,6366,35 MPa,20%
+Poly(ethylene naphthalate) (PEN),Thermoplastic,1.36 g/cm³,120 °C,270 °C,O=C(c1ccc2cc(ccc2c1)C(=O)OCCO)OCCO,High-Performance Sailcloth; Flexible OLED Screens,https://en.wikipedia.org/wiki/Polyethylene_naphthalate,111198,200 MPa,100%
+Poly(trimethylene terephthalate) (PTT),Thermoplastic,1.35 g/cm³,45 °C,228 °C,O=C(c1ccc(C(=O)OCCCO)cc1)OCCCO,Stain-Resistant Carpets; Eco-friendly Fabrics,https://en.wikipedia.org/wiki/Polytrimethylene_terephthalate,111198,60 MPa,40%
+Poly(butylene adipate-co-terephthalate) (PBAT),Biopolymer,1.20 g/cm³,-30 °C,115 °C,O=C(CCCCC(=O)O)O.O=C(c1ccc(C(=O)O)cc1)O,Compostable Bags; Agricultural Mulch Films,https://en.wikipedia.org/wiki/Polybutylene_adipate_terephthalate,111198,35 MPa,700%
+Poly(allylamine hydrochloride) (PAH),Smart Polymer,1.20 g/cm³,Amorphous,Decomposes,C=CCN.Cl,Layer-by-Layer Nanocapsules; Drug Delivery,https://en.wikipedia.org/wiki/Polyallylamine,111198,N/A,N/A
+Poly(ethyl cyanoacrylate) (Super Glue),Thermoplastic,1.06 g/cm³,130 °C,Amorphous,CCOC(=O)C(=C)C#N,Forensic Fingerprinting; Instant Adhesives,https://en.wikipedia.org/wiki/Cyanoacrylate,7247,20 MPa,2%
+Poly(methylpentene) (PMP / TPX),Thermoplastic,0.83 g/cm³,29 °C,235 °C,CC(C)CC=C,Labware; Gas Permeable Membranes,https://en.wikipedia.org/wiki/Polymethylpentene,111198,25 MPa,15%
+Ethylene Propylene Diene Monomer (EPDM),Elastomer,0.86 g/cm³,-50 °C,Amorphous,CC=C.C=C,Roofing Membranes; Car Door Seals,https://en.wikipedia.org/wiki/EPDM_rubber,111198,15 MPa,300%
+Chlorosulfonated Polyethylene (CSM / Hypalon),Elastomer,1.15 g/cm³,-20 °C,Amorphous,CC(Cl)CS(=O)(=O)Cl,Inflatable Boats; Chemical Resistant Hoses,https://en.wikipedia.org/wiki/Hypalon,111198,25 MPa,400%
+Poly(oxytetramethylene) glycol (PTMEG),Elastomer,0.98 g/cm³,-75 °C,35 °C,C(CCO)CO,Precursor for Spandex and Polyurethanes,https://en.wikipedia.org/wiki/PolyTHF,111198,N/A,N/A
+Poly(vinyl pyridine) (PVPyr),Smart Polymer,1.15 g/cm³,142 °C,Amorphous,C=Cc1ccccn1,Antimicrobial Coatings; Battery Membranes,https://en.wikipedia.org/wiki/Poly(4-vinylpyridine),111198,N/A,N/A
+Poly(thiophene) (PT),Conductive Polymer,1.10 g/cm³,Amorphous,Decomposes,c1ccsc1,Electrochromic Windows; OLED Displays,https://en.wikipedia.org/wiki/Polythiophene,111198,N/A,N/A
+High-Density Polyethylene (HDPE),Thermoplastic,0.95 g/cm³,-110 °C,130 °C,CC,Milk Jugs; Hard Hats,https://en.wikipedia.org/wiki/High-density_polyethylene,8058,25 MPa,50%
+Low-Density Polyethylene (LDPE),Thermoplastic,0.92 g/cm³,-110 °C,110 °C,CC,Plastic Wrap; Grocery Bags,https://en.wikipedia.org/wiki/Low-density_polyethylene,8058,15 MPa,500%
+Ultra-High-Molecular-Weight Polyethylene (UHMWPE),Thermoplastic,0.93 g/cm³,-110 °C,135 °C,CC,Joint Replacements; Body Armor,https://en.wikipedia.org/wiki/Ultra-high-molecular-weight_polyethylene,8058,40 MPa,300%
+Nylon 6 (Polyamide 6),Thermoplastic,1.14 g/cm³,47 °C,220 °C,NCCCCCC(=O),Guitar Strings; Bristles,https://en.wikipedia.org/wiki/Nylon_6,10878,85 MPa,100%
+Nylon 11 (Polyamide 11),Thermoplastic,1.04 g/cm³,46 °C,190 °C,NCCCCCCCCCCC(=O),Pneumatic Tubing; Sports Shoes,https://en.wikipedia.org/wiki/Nylon_11,3301,50 MPa,300%
+Nylon 12 (Polyamide 12),Thermoplastic,1.01 g/cm³,37 °C,178 °C,NCCCCCCCCCCCC(=O),3D Printing Powders; Fuel Lines,https://en.wikipedia.org/wiki/Nylon_12,14342,45 MPa,250%
+Polysulfone (PSU),Thermoplastic,1.24 g/cm³,185 °C,Amorphous,O=S(=O)(c1ccc(cc1)Oc2ccc(cc2)C(C)(C)c3ccc(cc3)Oc4ccccc4),Medical Sterilization Trays; Water Filters,https://en.wikipedia.org/wiki/Polysulfone,111198,70 MPa,50%
+Polyphenylsulfone (PPSU),Thermoplastic,1.29 g/cm³,220 °C,Amorphous,O=S(=O)(c1ccc(cc1)Oc2ccc(cc2)c3ccc(cc3)Oc4ccccc4),Aircraft Interiors; Dental Instruments,https://en.wikipedia.org/wiki/Polyphenylsulfone,111198,75 MPa,60%
+Polyetherketoneketone (PEKK),Thermoplastic,1.30 g/cm³,162 °C,360 °C,O=C(c1ccc(cc1)Oc2ccc(cc2)C(=O)c3ccccc3),3D Printed Orthopedic Implants,https://en.wikipedia.org/wiki/Polyaryletherketone,111198,115 MPa,5%
+Ethylene Vinyl Alcohol (EVOH),Thermoplastic,1.17 g/cm³,60 °C,185 °C,CC.C(C(O))C,Oxygen Barrier Films; Food Packaging,https://en.wikipedia.org/wiki/Ethylene_vinyl_alcohol,111198,75 MPa,250%
+Cyclic Olefin Copolymer (COC),Thermoplastic,1.02 g/cm³,130 °C,Amorphous,CC1CCC2C1C3CCC2C3,Prefilled Medical Syringes; Lenses,https://en.wikipedia.org/wiki/Cyclic_olefin_copolymer,111198,60 MPa,3%
+Syndiotactic Polystyrene (sPS),Thermoplastic,1.04 g/cm³,100 °C,270 °C,C(C(c1ccccc1))C,Automotive Electronic Components,https://en.wikipedia.org/wiki/Polystyrene,7150,40 MPa,2%
+Ionomer (Surlyn),Thermoplastic,0.94 g/cm³,50 °C,90 °C,CC.C=CC(=O)O,Golf Ball Covers; Perfume Caps,https://en.wikipedia.org/wiki/Ionomer,111198,30 MPa,400%
+Polybutene-1 (PB-1),Thermoplastic,0.91 g/cm³,-18 °C,125 °C,CCC(C)C,Pressurized Hot Water Pipes,https://en.wikipedia.org/wiki/Polybutylene,111198,35 MPa,300%
+Polyarylate (PAR),Thermoplastic,1.21 g/cm³,193 °C,Amorphous,O=C(c1ccc(C(=O)Oc2ccc(C(C)(C)c3ccc(OC(=O))cc3)cc2)cc1),Solar Panel Glazing; Fire Helmets,https://en.wikipedia.org/wiki/Polyarylate,111198,70 MPa,50%
+Polyhydroxyethylmethacrylate (pHEMA),Smart Polymer,1.15 g/cm³,85 °C,Amorphous,CC(=C)C(=O)OCCO,Soft Contact Lenses; Hydrogels,https://en.wikipedia.org/wiki/Polyhydroxyethylmethacrylate,111198,N/A,N/A
+Bismaleimide (BMI),Thermoset,1.25 g/cm³,280 °C,Decomposes,O=C1C=CC(=O)N1c2ccc(Cc3ccc(N4C(=O)C=CC4=O)cc3)cc2,Military Aircraft Composites; Printed Circuit Boards,https://en.wikipedia.org/wiki/Bismaleimide,111198,80 MPa,2%
+Vinyl Ester Resin,Thermoset,1.12 g/cm³,110 °C,Decomposes,CC(=C)C(=O)OCC(O)COc1ccc(C(C)(C)c2ccc(OCC(O)COC(=O)C(=C)C)cc2)cc1,Corrosion Resistant Tanks; Marine Hulls,https://en.wikipedia.org/wiki/Vinyl_ester,111198,85 MPa,4%
+Unsaturated Polyester Resin (UPR),Thermoset,1.20 g/cm³,70 °C,Decomposes,O=C(O)C=CC(=O)O.OCCO,Fiberglass Boats; Cultured Marble,https://en.wikipedia.org/wiki/Polyester_resin,111198,60 MPa,2%
+Novolac Resin,Thermoset,1.25 g/cm³,130 °C,Decomposes,c1cc(O)ccc1.C=O,Photoresists for Microelectronics,https://en.wikipedia.org/wiki/Novolac,111198,50 MPa,1%
+Resorcinol Formaldehyde,Thermoset,1.30 g/cm³,Amorphous,Decomposes,Oc1cccc(O)c1.C=O,Tire Cord Adhesives; Aerogels,https://en.wikipedia.org/wiki/Resorcinol_formaldehyde_resin,111198,N/A,N/A
+Diallyl Phthalate (DAP),Thermoset,1.26 g/cm³,160 °C,Decomposes,O=C(OCC=C)c1ccccc1C(=O)OCC=C,High-Rel Military Connectors,https://en.wikipedia.org/wiki/Diallyl_phthalate,111198,70 MPa,2%
+Furan Resin,Thermoset,1.15 g/cm³,Amorphous,Decomposes,c1cc(oc1)CO,Sand Casting Binders; Cement,https://en.wikipedia.org/wiki/Furan_resin,111198,40 MPa,1%
+Fluoroelastomer (FKM / Viton),Elastomer,1.80 g/cm³,-15 °C,Amorphous,C(F)(F)C(F)(F).C=C(F)C(F)(F)F,O-Rings; Fuel Hoses; Aerospace Gaskets,https://en.wikipedia.org/wiki/FKM,111198,15 MPa,250%
+Perfluoroelastomer (FFKM / Kalrez),Elastomer,2.00 g/cm³,-5 °C,Amorphous,C(F)(F)C(F)(F),Semiconductor Seals; Chemical Plant Valves,https://en.wikipedia.org/wiki/FFKM,111198,18 MPa,150%
+Polybutadiene (BR),Elastomer,0.90 g/cm³,-105 °C,Amorphous,C=CC=C,Golf Ball Cores; Tire Treads,https://en.wikipedia.org/wiki/Polybutadiene,111198,15 MPa,500%
+Chlorinated Polyethylene (CPE),Elastomer,1.16 g/cm³,-20 °C,Amorphous,CC(Cl)C,Automotive Hoses; Cable Jacketing,https://en.wikipedia.org/wiki/Chlorinated_polyethylene,111198,20 MPa,400%
+Thermoplastic Polyurethane (TPU),Elastomer,1.20 g/cm³,-40 °C,160 °C,O=C=Nc1ccc(Cc2ccc(N=C=O)cc2)cc1.OCCO,Phone Cases; Caster Wheels; Inflatable Rafts,https://en.wikipedia.org/wiki/Thermoplastic_polyurethane,111198,45 MPa,600%
+Polyether Block Amide (PEBA / Pebax),Elastomer,1.01 g/cm³,-60 °C,160 °C,NCCCCCC(=O).C(CCO)CO,High-End Running Shoes; Catheters,https://en.wikipedia.org/wiki/Polyether_block_amide,111198,35 MPa,500%
+Epichlorohydrin Rubber (ECO),Elastomer,1.36 g/cm³,-40 °C,Amorphous,C1OC1CCl,Automotive Fuel Seals; Printer Rollers,https://en.wikipedia.org/wiki/Epichlorohydrin_elastomer,111198,15 MPa,300%
+Acrylic Rubber (ACM),Elastomer,1.10 g/cm³,-15 °C,Amorphous,CC(=C)C(=O)OCC,Transmission Seals; O-rings,https://en.wikipedia.org/wiki/Acrylic_rubber,111198,12 MPa,250%
+Fluorosilicone Rubber (FVMQ),Elastomer,1.40 g/cm³,-65 °C,Amorphous,C[Si]1(C)O[Si](C)(CCC(F)(F)F)O[Si](C)(C)O1,Aviation Fuel System Seals,https://en.wikipedia.org/wiki/Fluorosilicone,111198,10 MPa,200%
+Agarose,Biopolymer,1.64 g/cm³,Amorphous,Decomposes,OCC1OC(OC2C(O)C(O)C(O)OC2CO)C(O)C(O)C1O,DNA Gel Electrophoresis; Cell Culture,https://en.wikipedia.org/wiki/Agarose,111198,N/A,N/A
+Carrageenan,Biopolymer,1.40 g/cm³,Amorphous,Decomposes,O=S(=O)(O)OC1C(O)C(O)C(OC1O)CO,Vegan Gelatin; Toothpaste Binder,https://en.wikipedia.org/wiki/Carrageenan,111198,N/A,N/A
+Pectin,Biopolymer,1.50 g/cm³,Amorphous,Decomposes,OC1C(O)C(O)C(OC1O)C(=O)O,Jam Thickener; Medicine Encapsulation,https://en.wikipedia.org/wiki/Pectin,111198,N/A,N/A
+Dextran,Biopolymer,1.50 g/cm³,Amorphous,Decomposes,OCC1OC(OC2C(O)C(O)C(O)OC2CO)C(O)C(O)C1O,Antithrombotic Drugs; Microspheres,https://en.wikipedia.org/wiki/Dextran,111198,N/A,N/A
+Xanthan Gum,Biopolymer,1.50 g/cm³,Amorphous,Decomposes,CC1OC(O)C(O)C(O)C1O,Salad Dressing Stabilizer; Oil Drilling Fluid,https://en.wikipedia.org/wiki/Xanthan_gum,111198,N/A,N/A
+Collagen,Biopolymer,1.35 g/cm³,Amorphous,Decomposes,CC(C)CC(C(=O)NCC(=O)O)NC(=O)C1CCCN1,Cosmetic Surgery; Artificial Skin,https://en.wikipedia.org/wiki/Collagen,111198,N/A,N/A
+Gelatin,Biopolymer,1.35 g/cm³,Amorphous,Decomposes,CC(C)CC(C(=O)NCC(=O)O)NC(=O)C1CCCN1,Capsules; Food Gelling Agent,https://en.wikipedia.org/wiki/Gelatin,111198,N/A,N/A
+Fibroin (Silk),Biopolymer,1.30 g/cm³,175 °C,Decomposes,CC(C(=O)NCC(=O)O)N,Surgical Sutures; High-End Textiles,https://en.wikipedia.org/wiki/Fibroin,111198,500 MPa,15%
+Keratin,Biopolymer,1.30 g/cm³,Amorphous,Decomposes,C(CC(=O)O)C(C(=O)O)N,Hair Products; Biomedical Scaffolds,https://en.wikipedia.org/wiki/Keratin,111198,N/A,N/A
+Poly(glutamic acid) (PGA),Biopolymer,1.50 g/cm³,Amorphous,Decomposes,O=C(O)CCC(N)C(=O)O,Water Treatment; Drug Delivery,https://en.wikipedia.org/wiki/Polyglutamic_acid,111198,N/A,N/A
+Polyacetylene (PAC),Conductive Polymer,1.16 g/cm³,Amorphous,Decomposes,C=CC=C,First Discovered Conductive Polymer,https://en.wikipedia.org/wiki/Polyacetylene,111198,N/A,N/A
+Poly(p-phenylene) (PPP),Conductive Polymer,1.20 g/cm³,Amorphous,Decomposes,c1ccc(cc1)c2ccccc2,Blue Light OLEDs; Precursors,https://en.wikipedia.org/wiki/Poly(p-phenylene),111198,N/A,N/A
+Polycarbazole,Conductive Polymer,1.25 g/cm³,Amorphous,Decomposes,c1ccc2c(c1)c3ccccc3[nH]2,Photorefractive Materials; Biosensors,https://en.wikipedia.org/wiki/Polycarbazole,111198,N/A,N/A
+Poly(3 4-ethylenedioxythiophene) (PEDOT),Conductive Polymer,1.05 g/cm³,Amorphous,Decomposes,C1COC2=C(O1)C=CS2,Transparent Electrodes; Antistatic Films,https://en.wikipedia.org/wiki/PEDOT,111198,N/A,N/A
+Polyisobutylene (PIB),Elastomer,0.92 g/cm³,-70 °C,Amorphous,CC(C)(C)C,Chewing Gum Base; Tire Inner Liners,https://en.wikipedia.org/wiki/Polyisobutylene,111198,10 MPa,600%
+Poly(vinyl ether),Thermoplastic,0.98 g/cm³,-30 °C,Amorphous,C=COC,Pressure-Sensitive Adhesives,https://en.wikipedia.org/wiki/Polyvinyl_ether,111198,N/A,N/A
