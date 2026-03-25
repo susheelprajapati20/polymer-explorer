@@ -77,6 +77,7 @@ function applyFilters() {
     displaySearchResults(filtered);
 }
 
+// Display Cards (UPDATED with Quick Profile and YouTube Button)
 function displaySearchResults(results) {
     const container = document.getElementById('searchResults');
     container.innerHTML = '';
@@ -90,6 +91,16 @@ function displaySearchResults(results) {
         const elongation = poly.elongation && poly.elongation !== "N/A" ? poly.elongation : "N/A";
         const imageUrl = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${poly.pubchem_cid}/PNG`;
 
+        // Fallbacks for the new columns
+        const formula = poly.formula || "Complex Polymer Structure";
+        const recyclability = poly.recyclability || "Check local recycling codes";
+        const funFact = poly.fun_fact || "A vital material in modern engineering.";
+
+        // YouTube Button logic
+        const ytLink = poly.youtube_link ?
+            `<a href="${poly.youtube_link}" target="_blank" style="display: block; text-align: center; background-color: #e74c3c; color: white; border: none; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: bold; margin-top: 10px; transition: 0.3s;" onmouseover="this.style.backgroundColor='#c0392b';" onmouseout="this.style.backgroundColor='#e74c3c';">▶️ Watch YouTube Video</a>`
+            : '';
+
         card.innerHTML = `
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
                 <div style="flex: 1; padding-right: 10px;">
@@ -102,11 +113,21 @@ function displaySearchResults(results) {
             <hr>
             <p style="font-size: 0.9rem;"><strong>Thermal:</strong> Tg: ${poly.glass_transition_temperature} | Tm: ${poly.melting_point}</p>
             <p style="font-size: 0.9rem;"><strong>Mechanical:</strong> Tensile: ${tensile} | Elongation: ${elongation}</p>
-            <hr>
+            
+            <div style="margin-top: 15px; background-color: #f8f9fa; padding: 12px; border-radius: 8px; border-left: 4px solid var(--secondary);">
+                <h4 style="margin: 0 0 10px 0; color: var(--primary); font-size: 0.95rem;">📌 Quick Profile</h4>
+                <ul style="margin: 0; padding-left: 20px; font-size: 0.85rem; color: #444; line-height: 1.6;">
+                    <li><strong>Formula:</strong> ${formula}</li>
+                    <li><strong>Eco-Status:</strong> ${recyclability}</li>
+                    <li><strong>Did you know?</strong> ${funFact}</li>
+                </ul>
+            </div>
+
             <div style="margin-top: 15px;">
                 <a href="${poly.wiki_link}" target="_blank" style="display: block; text-align: center; background-color: transparent; color: #2c3e50; border: 2px solid #2c3e50; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#2c3e50'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#2c3e50';">
                     🔗 Access Literature Reference
                 </a>
+                ${ytLink}
             </div>
         `;
         container.appendChild(card);

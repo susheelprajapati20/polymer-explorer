@@ -1,126 +1,302 @@
-/* --- Base Variables & Setup --- */
+/* --- 1. Premium Typography & Variables --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 :root {
-    --primary: #2c3e50;
-    --secondary: #3498db;
-    --bg-light: #f8f9fa;
-    --text-dark: #333;
+    /* Premium Color Palette */
+    --primary: #0f172a;
+    /* Deep Slate */
+    --secondary: #4f46e5;
+    /* Vibrant Indigo */
+    --secondary-hover: #4338ca;
+    --bg-light: #f8fafc;
+    /* High-end off-white */
+    --surface: #ffffff;
+    /* Pure white for cards */
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --border-light: #e2e8f0;
+
+    /* Modern Shadows, Glows & Curves */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.35);
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 24px;
+    --radius-pill: 9999px;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     margin: 0;
     background-color: var(--bg-light);
     color: var(--text-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* --- Header & Navigation --- */
+/* --- 2. Glassmorphism Header & Animated Text --- */
 header {
-    background-color: var(--primary);
+    background: rgba(15, 23, 42, 0.85);
+    /* Semi-transparent Slate */
+    backdrop-filter: blur(12px);
+    /* Frosted Glass Effect */
+    -webkit-backdrop-filter: blur(12px);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 🌟 Premium Animated Gradient Title */
+header h1 {
+    margin: 0 0 1.2rem 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(300deg, #818cf8, #c084fc, #38bdf8, #818cf8);
+    background-size: 300% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientFlow 5s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 nav {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
 }
 
 nav button {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-pill);
     cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 nav button:hover {
     background: white;
     color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-/* --- Main Content Layout --- */
+/* --- 3. Main Content & Page Transitions --- */
 main {
-    padding: 2rem;
-    max-width: 1200px;
+    padding: 3rem 2rem;
+    max-width: 1250px;
     margin: auto;
 }
 
 section {
     display: none;
-    animation: fadeIn 0.4s;
+    animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 section.active {
     display: block;
 }
 
-@keyframes fadeIn {
-    from {
+@keyframes slideUpFade {
+    0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(30px) scale(0.98);
     }
 
-    to {
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
-/* --- Inputs & Buttons --- */
+h2 {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* --- 4. Beautiful Inputs & Buttons --- */
 input[type="text"],
 select {
     width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-md);
     font-size: 1rem;
+    font-family: inherit;
+    background-color: var(--surface);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
     box-sizing: border-box;
 }
 
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
 button {
-    background-color: var(--secondary);
+    background: linear-gradient(135deg, var(--secondary) 0%, #6366f1 100%);
     color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
+    padding: 0.9rem 1.8rem;
+    border-radius: var(--radius-md);
     cursor: pointer;
     font-size: 1rem;
-    transition: 0.3s;
-    font-weight: bold;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 700;
+    font-family: inherit;
 }
 
 button:hover {
-    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
 }
 
-/* --- Grid & Cards --- */
+/* --- 5. 3D Floating Cards --- */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
 }
 
 .card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid #eee;
+    background: var(--surface);
+    padding: 1.8rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: #cbd5e1;
 }
 
-/* --- Comparison Table --- */
+.card hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-light);
+    margin: 1.2rem 0;
+}
+
+.card h3 {
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+/* --- 6. Modern Pastel Badges --- */
+.badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* High-Contrast Pastels */
+.token-thermoplastic {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+.token-thermoset {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.token-elastomer {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.token-biopolymer {
+    background-color: #f3e8ff;
+    color: #86198f;
+}
+
+.token-conductivepolymer {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.token-smartpolymer {
+    background-color: #e0f2fe;
+    color: #075985;
+}
+
+/* --- 7. Interactive Filter Pills --- */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.4rem;
+    background: var(--surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.filter-btn.active {
+    background: var(--secondary);
+    color: white;
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-md);
+}
+
+/* --- 8. Elegant Data Tables --- */
 .compare-controls {
     display: flex;
     gap: 1rem;
@@ -129,135 +305,86 @@ button:hover {
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--surface);
+    border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
 }
 
 th,
 td {
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: left;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-light);
 }
 
 th {
-    background-color: var(--primary);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
-tr:nth-child(even) {
-    background-color: #f9fbfd;
+tr:last-child td {
+    border-bottom: none;
 }
 
-/* --- 3D Viewer --- */
+tr:hover td {
+    background-color: #f1f5f9;
+    transition: 0.2s;
+}
+
+/* --- 9. 3D Viewer & Chart Containers --- */
 .mol-container {
     width: 100%;
-    height: 500px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    height: 550px;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-lg);
     margin-bottom: 1rem;
-    background: white;
+    background: var(--surface);
     position: relative;
-    /* 💡 THE FIX: This keeps the 3D model perfectly locked inside its box! */
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+    overflow: hidden;
 }
 
 .note {
-    font-size: 0.85rem;
-    color: #666;
+    font-size: 0.9rem;
+    color: var(--text-muted);
     text-align: center;
+    font-style: italic;
 }
 
-/* --- CATEGORY TOKENS / BADGES --- */
-.badge {
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 0.5rem;
+/* --- 10. Exam Scorecard Animation --- */
+.scorecard-item {
+    background: var(--surface);
+    border-left: 6px solid var(--border-light);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
-.token-thermoplastic {
-    background-color: #3498db;
+.scorecard-item:hover {
+    transform: translateX(8px);
 }
 
-.token-thermoset {
-    background-color: #e74c3c;
+.scorecard-item.correct {
+    border-left-color: #10b981;
 }
 
-.token-elastomer {
-    background-color: #2ecc71;
+.scorecard-item.incorrect {
+    border-left-color: #ef4444;
 }
 
-.token-biopolymer {
-    background-color: #9b59b6;
-}
-
-.token-conductivepolymer {
-    background-color: #f39c12;
-}
-
-.token-smartpolymer {
-    background-color: #e67e22;
-}
-
-/* --- INTERACTIVE FILTER BUTTONS --- */
-.filter-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.filter-btn {
-    padding: 0.5rem 1.2rem;
-    border: 2px solid var(--secondary);
-    background-color: white;
-    color: var(--secondary);
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-    background-color: #ebf5fb;
-}
-
-.filter-btn.active {
-    background-color: var(--secondary);
-    color: white;
-}
-
-/* --- 2D IMAGES & WIKIPEDIA BUTTONS --- */
-.reference-btn {
-    display: block;
-    text-align: center;
-    background-color: transparent;
-    color: var(--secondary);
-    border: 2px solid var(--secondary);
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.reference-btn:hover {
-    background-color: var(--secondary);
-    color: white;
-}
-
-.poly-image {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    padding: 5px;
+/* Quick Profile Box Override */
+.card>div:nth-of-type(2) {
+    background: var(--bg-light) !important;
+    border-left: 4px solid var(--secondary) !important;
+    border-radius: var(--radius-sm) !important;
 }
