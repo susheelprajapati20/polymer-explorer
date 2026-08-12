@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polymer Explorer | Learning Hub</title>
+    <title>Polymer Explorer </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -12,18 +12,18 @@
     <style>
         /* Scorecard specific styling */
         .scorecard-item {
-            background: #f9f9f9;
+            background:#f9f9f9;
             border-left: 5px solid #ccc;
             padding: 15px;
             border-radius: 4px;
         }
 
         .scorecard-item.correct {
-            border-left-color: #2ecc71;
+            border-left-color:#2ecc71;
         }
 
         .scorecard-item.incorrect {
-            border-left-color: #e74c3c;
+            border-left-color:#e74c3c;
         }
     </style>
 </head>
@@ -73,7 +73,7 @@
             <div style="text-align: center;">
                 <button id="exportBtn" onclick="exportComparisonCSV()"
                     style="display: none; margin-top: 1.5rem; background-color: #27ae60;">
-                    📥 Export Comparison to Excel (CSV)
+                     Export Comparison to Excel (CSV)
                 </button>
             </div>
 
@@ -141,10 +141,10 @@
                 <div style="text-align: center;">
                     <button id="nextQuestionBtn" onclick="nextQuestion()"
                         style="display: none; margin-top: 15px; background-color: var(--primary);">Next Question
-                        ➡️</button>
+                        </button>
                     <button id="finishQuizBtn" onclick="showScorecard()"
                         style="display: none; margin-top: 15px; background-color: #f39c12;">Finish Exam & See Results
-                        🏆</button>
+                        </button>
                 </div>
             </div>
 
@@ -168,7 +168,7 @@
 
         <section id="resources">
             <h2>Learning Resources & Inspiration</h2>
-            <h3 style="margin-top: 2rem; color: var(--primary);">🕰️ The History of Polymers</h3>
+            <h3 style="margin-top: 2rem; color: var(--primary);"> The History of Polymers</h3>
             <div class="grid-container" style="margin-bottom: 2rem;">
                 <div class="card" style="padding: 0; overflow: hidden;">
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/1RDc2opwg0I" frameborder="0"
@@ -210,28 +210,28 @@
                 </div>
             </div>
 
-            <h3 style="margin-top: 2rem; color: var(--primary);">📚 Study Notes & Full Courses</h3>
+            <h3 style="margin-top: 2rem; color: var(--primary);"> Study Notes & Full Courses</h3>
             <div class="grid-container">
                 <div class="card">
                     <h3 style="margin-top: 0;">Complete University Courses</h3>
                     <ul>
                         <li><a href="https://youtube.com/playlist?list=PLbMVogVj5nJSztC8B3fU7J7eA5sE3x6-F"
-                                target="_blank">📚 NPTEL: Complete Polymer Chemistry Playlist</a></li>
-                        <li><a href="https://ocw.mit.edu/courses/3-063-polymer-physics-spring-2007/" target="_blank">🏛️
+                                target="_blank"> NPTEL: Complete Polymer Chemistry Playlist</a></li>
+                        <li><a href="https://ocw.mit.edu/courses/3-063-polymer-physics-spring-2007/" target="_blank">
                                 MIT OCW: Polymer Physics Course</a></li>
                         <li><a href="https://ocw.mit.edu/courses/10-569-synthesis-of-polymers-fall-2006/"
-                                target="_blank">🧪 MIT OCW: Synthesis of Polymers</a></li>
+                                target="_blank"> MIT OCW: Synthesis of Polymers</a></li>
                     </ul>
                 </div>
 
                 <div class="card">
                     <h3 style="margin-top: 0;">Study Notes & Telegram Channels</h3>
                     <ul>
-                        <li><a href="https://t.me/s/gtu_study" target="_blank">📱 Telegram: Material Science & Eng.
+                        <li><a href="https://t.me/s/gtu_study" target="_blank"> Telegram: Material Science & Eng.
                                 Notes</a></li>
-                        <li><a href="https://t.me/jchemistry" target="_blank">📱 Telegram: Chemistry & Polymer Notes</a>
+                        <li><a href="https://t.me/jchemistry" target="_blank"> Telegram: Chemistry & Polymer Notes</a>
                         </li>
-                        <li><a href="https://iupac.org/polymer-edu/" target="_blank">📖 Official IUPAC Polymer
+                        <li><a href="https://iupac.org/polymer-edu/" target="_blank"> Official IUPAC Polymer
                                 Terminology Guide</a></li>
                     </ul>
                 </div>
@@ -242,11 +242,11 @@
             <h2>About the Developer</h2>
             <div class="card about-card">
                 <h3>Name : Susheel Prajapati</h3>
-                <p><strong>Degree:</strong> B.Tech IT and Mathematical Innovation</p>
+                <p><strong>Degree:</strong> B.Tech Information Technology and Mathematical Innovation</p>
                 <p><strong>University:</strong> University of Delhi</p>
                 <p><strong>Mentor:</strong> Prof. Mahima Kaushik</p>
                 <p>This project was built to help materials science students easily search, compare, and visualize
-                    polymer structures using real scientific data.</p>
+                    polymer structures using real scientific data..</p>
             </div>
         </section>
     </main>
